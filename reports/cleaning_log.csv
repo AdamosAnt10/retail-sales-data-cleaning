@@ -1,0 +1,11 @@
+step,action
+1,"Converted 'Transaction Date' to datetime, 'Discount Applied' to boolean, and 'Quantity' to numeric."
+2,Filled missing values in 'Total Spent' using 'Quantity' and 'Price Per Unit'.
+3,Filled missing values in 'Quantity' using 'Total Spent' and 'Price Per Unit'.
+4,Filled missing values in 'Price Per Unit' using 'Total Spent' and 'Quantity'.
+5,Dropped 604 unrecoverable rows 
+6,Filled missing values in 'Discount Applied' with False
+7,Filled missing values in 'Item' with Unknow Item
+8,Normal outliers
+9,"Total Spent: 60 outliers (IQR, over 403.5) kept; max 410 = 10 x 41 (max Quantity x max Price), so they are genuine large purchases, not errors."
+10,"Total Spent: 60 outliers (IQR, over 403.5) kept; max 410 = 10 x 41 (max Quantity x max Price), so they are genuine large purchases, not errors."
