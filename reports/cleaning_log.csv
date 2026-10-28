@@ -1,9 +1,9 @@
 step,action
-1,"Converted 'Transaction Date' to datetime, 'Discount Applied' to boolean, 'Quantity' to numeric."
-2,Computed 0 missing 'Total Spent' values from 'Quantity' x 'Price Per Unit'.
-3,Computed 0 missing 'Quantity' values from 'Total Spent' / 'Price Per Unit'.
-4,Computed 609 missing 'Price Per Unit' values from 'Total Spent' / 'Quantity'.
-5,Dropped 604 rows where 'Quantity' and 'Total Spent' were both missing and could not be computed.
-6,Filled 3988 missing 'Discount Applied' values with False (assumption: no discount recorded).
-7,Filled 609 missing 'Item' values with 'Unknown Item'.
-8,"'Total Spent': 60 outliers (IQR, above 403.5) kept; max 410.0 equals max Quantity x max Price, so they are genuine purchases."
+1,"Converted 'Transaction Date' to datetime, 'Discount Applied' to boolean, and 'Quantity' to numeric."
+2,Filled missing values in 'Total Spent' using 'Quantity' and 'Price Per Unit'.
+3,Filled missing values in 'Quantity' using 'Total Spent' and 'Price Per Unit'.
+4,Filled missing values in 'Price Per Unit' using 'Total Spent' and 'Quantity'.
+5,Dropped 604 unrecoverable rows 
+6,Filled missing values in 'Discount Applied' with False
+7,Filled missing values in 'Item' with Unknown Item
+8,"Total Spent: 60 outliers (IQR, over 403.5) kept; max 410 = 10 x 41 (max Quantity x max Price), so they are genuine large purchases, not errors."
