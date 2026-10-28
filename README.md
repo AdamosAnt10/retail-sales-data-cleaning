@@ -56,7 +56,8 @@ Main decisions:
 Full details: [reports/data_quality_audit.md](reports/data_quality_audit.md).
 
 ## Dataset
-Kaggle: "Retail Store Sales: Dirty for Data Cleaning" - <https://www.kaggle.com/datasets/ahmedmohamed2003/retail-store-sales-dirty-for-data-cleaning>. License: <[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)>.
+Kaggle: "Retail Store Sales: Dirty for Data Cleaning" - https://www.kaggle.com/datasets/ahmedmohamed2003/retail-store-sales-dirty-for-data-cleaning. 
+License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 ## Author
 Adamos Antoniou - [GitHub](https://github.com/AdamosAnt10) - [LinkedIn](https://www.linkedin.com/in/adamos-antoniou-b467373a6/)
