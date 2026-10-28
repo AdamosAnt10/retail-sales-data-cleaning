@@ -25,7 +25,9 @@ data-cleaning-report/
 │   ├── data_quality_audit.md             # full audit report
 │   ├── cleaning_log.csv                  # one line per cleaning step
 │   ├── before_after_comparison.csv       # nulls and statistics before/after
-│   └── figures/script_output.png
+│   └── figures/
+│       ├── script_output.png             # output of the cleaning script
+│       └── missing_before_after.png      # missing values before vs after
 ├── .gitignore
 ├── requirements.txt
 └── README.md
@@ -46,6 +48,8 @@ The script reads `data/raw/retail_store_sales.csv` and writes the clean dataset,
 | Rows | 12,575 | 11,971 |
 | Missing cells | 7,229 | 0 |
 | Duplicates | 0 | 0 |
+
+![Missing values before vs after cleaning](reports/figures/missing_before_after.png)
 
 Main decisions:
 - 609 missing `Price Per Unit` values were computed from `Total Spent / Quantity`.
